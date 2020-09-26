@@ -61,7 +61,7 @@ main{
     align-items: center;
     color: #FDDB3A;
     border:2px solid #FDDB3A;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border-radius: 50px;
 }
 
@@ -107,7 +107,7 @@ main{
     margin-bottom: 1.5rem;
 }
 
-.header-container a{
+.header-container a, .projects-section a{
     display: flex;
     align-items: center;
     color: white;
@@ -116,7 +116,7 @@ main{
 }
 
 
-.header-container a .icon{
+.header-container a .icon, .projects-section a .icon{
     margin-left: 16px;
     background-color: #FDDB3A;
     width: 54px;
@@ -131,18 +131,18 @@ main{
 }
 
 .skills-section li{
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
 }
 
-.skills-section h2{
+.skills-section h2, .projects-section h2{
     font-size: 1.5rem;
     color: white;
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.skills-section span{
+.skills-section span, .projects-section span{
     color: #FDDB3A;
 }
 
@@ -157,6 +157,72 @@ main{
     display: flex;
 }
 
+
+.projects-section{
+    width: 100vw;
+}
+
+.projects-section .project{
+    background-color:gray;
+    width: 80vw;
+    height: 500px;
+    min-height: 500px;
+    margin: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+
+.projects-section .project .project-info{
+    height: 70%;
+    width: 70%;
+}
+
+
+.projects-section .project .project-info .project-title{
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+
+.projects-section .project .project-info .project-category , h4{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    margin-top: 2rem;
+}
+
+
+.projects-section .project .project-info p{
+    margin-top: 1.5rem;
+    width: 80%;
+}
+
+.projects-section .project .project-info ul{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.projects-section .project .project-info li{
+    font-size: .8rem;
+    color: #1A1A2E;
+    background-color: #FDDB3A;
+    padding: 6px 18px;
+    border-radius: 50px;
+    margin-right: 1rem;
+}
+
+.projects-section a{
+    margin-right: 0;
+}
+
+.greenly{
+    background-image: linear-gradient(#1a1a2ea8, #06060c5e), url("../assets/greenly-bg.png");
+}
 
 
 @media (max-width: 1000px){
@@ -183,6 +249,38 @@ main{
     
     .header-container .header-content h1, h3, p{
         text-align: center;
+    }
+
+    /*Projects section*/
+    .projects-section .project{
+       
+        width: 90vw;
+        justify-content: space-evenly;
+        margin-bottom: 4rem;
+        flex-direction: column;
+    }
+
+    .projects-section .project .project-info{
+        height: 70%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .projects-section .project .project-info p{
+        margin-top: 1.5rem;
+        width: 80%;
+        margin: auto;
+    }
+    
+    
+    .projects-section .project .project-info ul{
+        flex-wrap: wrap;
+        width: 80%;
+        margin: auto;
+    }
+
+    .projects-section .project .project-info li{
+        margin-top: 1rem;
     }
 }
 
@@ -215,4 +313,5 @@ main{
     .header-container .header-content h1, h3, p{
         text-align: center;
     }
+
 }
